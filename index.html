@@ -35,15 +35,15 @@
 	<center><span class="auto-style5"><strong>びっくり工作テーブルランダム仕分けツール</strong></span><br><input type="button" value="どのテーブルに行くかを表示します。" onClick="omikuji()" class="auto-style1" style="width: 418px; height: 118px"><br class="auto-style3">
 	<br class="auto-style3"><strong><span class="auto-style2">それぞれ同じ確率で表示しています。<br>
 	</span></strong><span class="auto-style4">使用フォント:MS UI Gothic</span></center></form>
+	<body>
+   	<input type="button" onclick="window.close();" value="ウィンドウを閉じる">
+	</body>
 
 <script type="text/javascript">
 function omikuji() {
 	rand = Math.floor(Math.random()*5);
 	if (rand == 0) msg = "あなたは、１番テーブルにお越しください。";
 	if (rand == 1) msg = "あなたは、2番テーブルにお越しください。";
-	if (rand == 2) msg = "あなたは、3番テーブルにお越しください。";
-	if (rand == 3) msg = "あなたは、4番テーブルにお越しください。";
-	if (rand == 4) msg = "あなたは、5番テーブルにお越しください。";
 	alert(msg);
 }
 </script>
